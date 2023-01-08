@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <com.example.my_vectorscope.Draw
+        android:id="@+id/graticule"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="236dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/masclara"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onclick"
+        android:text="@string/load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graticule"
+        app:layout_constraintVertical_bias="0.505"
+        tools:ignore="OnClick,UsingOnClickInXml" />
+
+    <ImageView
+
+        android:id="@+id/testImage"
+        android:layout_width="292dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="23dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graticule"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bars"
+        tools:ignore="UnknownIdInLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
